@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Match Game</title>
+    <link rel="stylesheet" href="mygame.css">
+</head>
+<body>
+   <div class="game-card">
+    <div class="stats">
+        <span>Score: <b id="score">0</b></span>
+        <span>Time: <b id="timer">5</b>s</span>
+    </div>
+
+    <div class="display-area">
+        <h1 id="color-word">READY?</h1>
+    </div>
+
+    <div class="controls">
+        <button class="game-btn match" onclick="checkAnswer(true)">Match</button>
+        <button class="game-btn no-match" onclick="checkAnswer(false)">No-Match</button>
+    </div>
+
+    <button id="start-btn" onclick="startGame()">Start Game</button>
+
+   </div> 
+
+   <script src="mygame.js"></script>
+</body>
+</html>
